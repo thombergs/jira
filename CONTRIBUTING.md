@@ -19,6 +19,14 @@ Please note that this project is released with a [Contributor Code of Conduct][c
 
 The first step for running the app locally is to configure a GitHub App. For that you will need to use [ngrok](https://ngrok.com) to expose a URL publicly - referred to as `DOMAIN` in this doc - which will tunnel traffic back to your computer. If you choose to proceed with ngrok, you can do that by running `ngrok http 4002` after installing it.
 
+In order not to get a different domain each time you start ngrok, start it with a subomain (only works in the paid version, though):
+
+```
+ngrok http 9090 --subdomain SUBDOMAIN
+```
+
+ngrok will then print out your DOMAIN in the command line.
+
 Create a new [GitHub App](https://github.com/settings/apps), setting the following config:
 
 - **GitHub App name**: Anything you want, but it must be unique across GitHub. `E.g. my-test-app`
