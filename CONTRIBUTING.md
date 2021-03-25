@@ -62,7 +62,7 @@ Once you've set up your GitHub app and cloned this repo, copy the content from `
 + `APP_URL`: `https://DOMAIN`
 + `STORAGE_SECRET`: It needs to be set to a 32 char secret (anything else fails). You can generate one by running `openssl rand -hex 32` in your terminal.
 +  `PRIVATE_KEY_PATH`: You'll also need to generate a new private key on your GitHub app page, download it, move it to the source root of this repo, and set `PRIVATE_KEY_PATH=<your-private-key-name>.pem`
-+ `ATLASSIAN_URL`: The URL for the Jira instance you're testing it. If you don't have one now, please set the value of this variable after going through the step 1 of "Configuring the Jira instance" section of this document.
++ `ATLASSIAN_URL`: The URL for the Jira instance you're testing in. If you don't have one now, please set the value of this variable after going through the step 1 of "Configuring the Jira instance" section of this document.
 
 ## Running dependencies
 
