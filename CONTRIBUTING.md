@@ -17,7 +17,7 @@ Please note that this project is released with a [Contributor Code of Conduct][c
 
 ## Configuring a GitHub App
 
-The first step for running the app locally is to configure a GitHub App. For that you will need to use [ngrok](https://ngrok.com) to expose a URL publicly - referred to as `DOMAIN` in this doc - which will tunnel traffic back to your computer. If you choose to proceed with ngrok, you can do that by running `ngrok http 4002` after installing it.
+The first step for running the app locally is to configure a GitHub App. For that you will need to use [ngrok](https://ngrok.com) to expose a URL publicly - referred to as `DOMAIN` in this doc - which will tunnel traffic back to your computer. If you choose to proceed with ngrok, you can do that by running `ngrok http 4002` after installing it (if you have the paid version of ngrok, you can use the `--subdomain` parameter to get a subdomain that is stable across multiple restarts).
 
 Create a new [GitHub App](https://github.com/settings/apps), setting the following config:
 
@@ -64,7 +64,7 @@ This app is written in [ES6 JavaScript](https://nodejs.org/en/docs/es6/) and run
 
 Required version of Node: v10.13.0
 
-**WARNING:**  Newer versions of Node do not work with "pg": "^7.4.3". It will simply hang on every DB operation with no logs whatsoever. Check you version with `node --version`; Run `nvm use 10.13` if you need to change it.
+**WARNING:**  Newer versions of Node do not work with "pg": "^7.4.3". It will simply hang on every DB operation with no logs whatsoever. Check your version with `node --version`; Run `nvm use 10.13` if you need to change it.
 
 Install the dependencies by running:
 
